@@ -1,0 +1,104 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import Container from "@components/container.astro";
+import Label from "@components/ui/label.astro";
+import Layout from "@layouts/Layout.astro";
+import { getFormattedDate } from "@utils/all";
+import { CollectionEntry, getCollection, getEntry, getEntries } from "astro:content";
+
+type Props = CollectionEntry<"guides">;
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides");
+
+  return guides.map((guide) => ({
+    params: { slug: guide.slug},
+    props: { guide },
+  }));
+}
+
+
+const { guide } = Astro.props;
+
+const { Content, remarkPluginFrontmatter } = await guide.render();
+
+const tips = await getEntries(guide.data.tips);
+
+---
+
+<Layout
+  title={guide.data.title}
+  desc={guide.data.excerpt}
+  ogimage={guide.data.image}>
+  <Container>
+    <div class="max-w-screen-md mx-auto">
+      <h1
+        class="mt-2 mb-3 text-3xl font-serif tracking-tight text-center text-blue lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+        {guide.data.title}
+
+      </h1>
+    </div>
+  </Container>
+
+
+  <div
+    class="relative z-0 max-w-screen-lg mx-auto overflow-hidden lg:rounded-lg aspect-video p-5">
+    {
+      guide.data.image && (
+        <Picture
+          src={guide.data.image}
+          widths={[200, 400, 800]}
+          sizes="(max-width: 640px) 90vw, 480px"
+          aspectRatio="16:9"
+          width={1024}
+          height={576}
+          alt="Thumbnail"
+          loading="eager"
+          class="w-full"
+        />
+      )
+    }
+  </div>
+
+  <div class="grid text-blue font-serif md:grid-cols-2 mx-auto max-w-2xl mt-5 gap-10 pt-5">
+    {
+      tips.slice(0, 3).map((tip) => (
+        <div class="group">
+          <h1 class="text-xl font-semibold">{tip.data.name}</h1>
+          <h2 class="text-base py-1">{tip.data.description}</h2>
+          <h3 class="text-sm">{tip.data.address}</h3>
+          <h3 class="text-sm italic"><a href={tip.data.website}>{tip.data.website}</a></h3>
+          <h3 class="text-sm font-semibold">{tip.data.cost}</h3>
+          </div>
+          <div class="group">
+              <Image
+              src={tip.data.images}
+              format="avif"
+              width={1080}
+              height={1080}
+              alt="Team"
+              class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
+            />
+        </div>
+      ))
+    } 
+  </div>
+
+  <Container>
+    <article class="max-w-screen-md mx-auto">
+      <div
+        class="mx-auto my-3 prose prose-base dark:prose-invert prose-a:text-blue-600">
+        <Content />
+
+        
+
+      <div class="flex justify-center mt-7 mb-7">
+        <a
+          href="/guides"
+          class="px-5 py-3 text-sm text-blue-600 transition rounded-md dark:text-blue-500 bg-blue-50 hover:bg-blue-100">
+          ← View all guides 
+        </a>
+      </div>
+    </article>
+  </Container>
+</Layout>
