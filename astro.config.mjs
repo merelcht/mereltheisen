@@ -8,7 +8,8 @@ import sitemap from "@astrojs/sitemap";
 import { remarkReadingTime } from "./src/utils/all";
 
 export default defineConfig({
-  site: "https://stablo-astro.web3templates.com",
+  site: 'https://merelcht.github.io',
+  // base: 'mereltheisen',
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: ["rehype-plugin-image-native-lazy-loading"],
