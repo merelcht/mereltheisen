@@ -9,7 +9,7 @@ import { remarkReadingTime } from "./src/utils/all";
 
 export default defineConfig({
   site: 'https://merelcht.github.io',
-  // base: 'mereltheisen',
+  base: 'mereltheisen',
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: ["rehype-plugin-image-native-lazy-loading"],
