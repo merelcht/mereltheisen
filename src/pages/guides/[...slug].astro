@@ -2,8 +2,10 @@
 import { Image, Picture } from "@astrojs/image/components";
 import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
-// import { getFormattedDate } from "@utils/all";
+import { getFormattedDate } from "@utils/all";
 import { CollectionEntry, getCollection, getEntry, getEntries } from "astro:content";
+
+import myLogo from '../../assets/logo.png'; 
 
 type Props = CollectionEntry<"guides">;
 
@@ -59,7 +61,7 @@ const tips = await getEntries(guide.data.tips);
     }
   </div>
 
-  <!-- <div class="grid text-blue font-serif md:grid-cols-2 mx-auto max-w-2xl mt-5 gap-10 pt-5">
+  <div class="grid text-blue font-serif md:grid-cols-2 mx-auto max-w-2xl mt-5 gap-10 pt-5">
     {
       tips.slice(0, 3).map((tip) => (
         <div class="group">
@@ -71,17 +73,17 @@ const tips = await getEntries(guide.data.tips);
           </div>
           <div class="group">
               <Image
-              src={tip.data.images}
+              src={tip.data.images || myLogo}
               format="avif"
               width={1080}
               height={1080}
-              alt="Team"
+              alt="Tip image"
               class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
             />
         </div>
       ))
     } 
-  </div> -->
+  </div>
 
   <Container>
     <article class="max-w-screen-md mx-auto">
