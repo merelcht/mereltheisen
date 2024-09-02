@@ -6,6 +6,9 @@ image: "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s
 tips:
 - burro-salvia
 - dishoom
+- bubala
+- sketch
+- pique-nique
 ---
 
 
