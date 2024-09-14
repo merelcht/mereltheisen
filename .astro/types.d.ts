@@ -267,8 +267,50 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".md"] };
+"nyc.md": {
+	id: "nyc.md";
+  slug: "nyc";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
 };
 "tips": {
+"10-cases.md": {
+	id: "10-cases.md";
+  slug: "10-cases";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"bistrotheque.md": {
+	id: "bistrotheque.md";
+  slug: "bistrotheque";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"bob-bob-ricard.md": {
+	id: "bob-bob-ricard.md";
+  slug: "bob-bob-ricard";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"bubala.md": {
+	id: "bubala.md";
+  slug: "bubala";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"buffet-odette.md": {
+	id: "buffet-odette.md";
+  slug: "buffet-odette";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
 "burro-salvia.md": {
 	id: "burro-salvia.md";
   slug: "burro-salvia";
@@ -276,9 +318,86 @@ declare module 'astro:content' {
   collection: "tips";
   data: InferEntrySchema<"tips">
 } & { render(): Render[".md"] };
+"coming-soon.md": {
+	id: "coming-soon.md";
+  slug: "coming-soon";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"dejaren.md": {
+	id: "dejaren.md";
+  slug: "dejaren";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
 "dishoom.md": {
 	id: "dishoom.md";
   slug: "dishoom";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"kantjil-tijger.md": {
+	id: "kantjil-tijger.md";
+  slug: "kantjil-tijger";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"little-collins.md": {
+	id: "little-collins.md";
+  slug: "little-collins";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"luxembourg.md": {
+	id: "luxembourg.md";
+  slug: "luxembourg";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"made-warung.md": {
+	id: "made-warung.md";
+  slug: "made-warung";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"nopi.md": {
+	id: "nopi.md";
+  slug: "nopi";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"parsons.md": {
+	id: "parsons.md";
+  slug: "parsons";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"pique-nique.md": {
+	id: "pique-nique.md";
+  slug: "pique-nique";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"rijks.md": {
+	id: "rijks.md";
+  slug: "rijks";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"sketch.md": {
+	id: "sketch.md";
+  slug: "sketch";
   body: string;
   collection: "tips";
   data: InferEntrySchema<"tips">
@@ -293,6 +412,13 @@ declare module 'astro:content' {
 "van-dobben.md": {
 	id: "van-dobben.md";
   slug: "van-dobben";
+  body: string;
+  collection: "tips";
+  data: InferEntrySchema<"tips">
+} & { render(): Render[".md"] };
+"winkel-34.md": {
+	id: "winkel-34.md";
+  slug: "winkel-34";
   body: string;
   collection: "tips";
   data: InferEntrySchema<"tips">
