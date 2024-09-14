@@ -35,6 +35,6 @@
     "@tailwindcss/typography": "^0.5.15",
     "classnames": "^2.5.1",
     "daisyui": "^4.12.10",
-    "sharp": "^0.31.3"
+    "sharp": "^0.33.5"
   }
 }
