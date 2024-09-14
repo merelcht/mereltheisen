@@ -9,6 +9,10 @@ tips:
 - little-collins
 - winkel-34
 - rijks
+- dejaren
+- luxembourg
+- made-warung
+- kantjil-tijger
 ---
 
 

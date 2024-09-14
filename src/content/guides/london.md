@@ -9,6 +9,11 @@ tips:
 - bubala
 - sketch
 - pique-nique
+- 10-cases
+- parsons
+- bob-bob-ricard
+- nopi
+- bistrotheque
 ---
 
 
