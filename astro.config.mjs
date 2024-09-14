@@ -8,7 +8,7 @@ import sitemap from "@astrojs/sitemap";
 import { remarkReadingTime } from "./src/utils/all";
 
 export default defineConfig({
-  site: 'https://mereltheisen.com',
+  site: 'http://mereltheisen.com',
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: ["rehype-plugin-image-native-lazy-loading"],
