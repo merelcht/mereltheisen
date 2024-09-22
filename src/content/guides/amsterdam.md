@@ -13,6 +13,10 @@ tips:
 - luxembourg
 - made-warung
 - kantjil-tijger
+- pizzabakkers
+- vleminckx
+- koffie-salon
+- ysbreeker
 ---
 
 
