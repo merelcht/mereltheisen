@@ -5,6 +5,8 @@ category: "travel"
 image: "./src/assets/cities/nyc.png"
 tips:
 - pisellino
+- sadelles
+- maison-premiere
 ---
 
 
