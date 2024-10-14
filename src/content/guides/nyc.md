@@ -7,6 +7,11 @@ tips:
 - pisellino
 - sadelles
 - maison-premiere
+- manhatta
+- joes-shanghai
+- pastis
+- shuka
+- mexico-2000
 ---
 
 
