@@ -5,6 +5,9 @@ category: "travel"
 image: "./src/assets/cities/paris-coming-soon.png"
 tips:
 - coming-soon
+# - chez-janou
+# - fontaine-de-mars
+# - le-petit-marche
 ---
 
 
