@@ -14,6 +14,8 @@ tips:
 - bob-bob-ricard
 - nopi
 - bistrotheque
+- relais-venise
+- wilmington
 ---
 
 
