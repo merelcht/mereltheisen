@@ -16,6 +16,12 @@ tips:
 - bistrotheque
 - relais-venise
 - wilmington
+- padella
+- bunbunbun
+- sessions-arts-club
+- joia
+- pophams
+- brawn
 ---
 
 
