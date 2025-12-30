@@ -1,6 +1,6 @@
 ---
 title: "Amsterdam"
-excerpt: "We always knew but now we know. The tech elite mean to leave us all behind."
+excerpt: "My restaurant tips for cities around the world."
 category: "travel"
 image: "./src/assets/cities/AmsHigh.png"
 tips:
@@ -12,7 +12,6 @@ tips:
 - dejaren
 - luxembourg
 - made-warung
-- kantjil-tijger
 - pizzabakkers
 - vleminckx
 - koffie-salon
