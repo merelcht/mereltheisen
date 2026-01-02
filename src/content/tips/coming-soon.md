@@ -1,7 +1,7 @@
 ---
 name: ""
 description: ""
-images: "./src/assets/white.jpg"
+images: "./../../assets/white.jpg"
 address: ""
 website: ""
 cost: ""

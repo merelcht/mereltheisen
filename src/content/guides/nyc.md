@@ -2,7 +2,7 @@
 title: "New York City"
 excerpt: "My restaurant tips for cities around the world."
 category: "travel"
-image: "./src/assets/cities/nyc.png"
+image: "../../assets/cities/nyc.png"
 tips:
 - pisellino
 - sadelles

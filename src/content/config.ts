@@ -1,5 +1,6 @@
 import { z, defineCollection, reference } from "astro:content";
 
+
 const blog = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -13,11 +14,11 @@ const blog = defineCollection({
 });
 
 const guides = defineCollection({
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     excerpt: z.string(),
     category: z.string().trim(),
-    image: z.string().optional(),
+    image: image(),
     headerimage: z.string().optional(),
     draft: z.boolean().optional(),
     tips: z.array(reference("tips"))
@@ -25,10 +26,10 @@ const guides = defineCollection({
 });
 
 const tips = defineCollection({
-  schema: z.object({
+  schema: ({ image }) => z.object({
     name: z.string(),
     description: z.string(),
-    images: z.string().optional(),
+    images: image().optional(),
     address: z.string().optional(),
     website: z.string().optional(),
     cost: z.string().optional(),
