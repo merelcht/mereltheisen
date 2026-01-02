@@ -2,7 +2,7 @@
 title: "Amsterdam"
 excerpt: "My restaurant tips for cities around the world."
 category: "travel"
-image: "./src/assets/cities/AmsHigh.png"
+image: "../../assets/cities/AmsHigh.png"
 tips:
 - van-dobben
 - buffet-odette

@@ -1,7 +1,5 @@
-// https://astro.build/config
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
@@ -14,11 +12,13 @@ export default defineConfig({
     rehypePlugins: ["rehype-plugin-image-native-lazy-loading"],
     extendDefaultPlugins: true,
   },
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/sharp",
+    },
+  },
   integrations: [
     tailwind(),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
     mdx(),
     sitemap(),
   ],
