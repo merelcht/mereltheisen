@@ -6,6 +6,7 @@ image: "../../assets/cities/london.png"
 tips:
 - bubala
 - sketch
+- 10-cases
 - dishoom
 - pique-nique
 - parsons
