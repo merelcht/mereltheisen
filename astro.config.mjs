@@ -22,4 +22,9 @@ export default defineConfig({
     mdx(),
     sitemap(),
   ],
+  vite: {
+    ssr: {
+      external: ["css-tree"]
+    },
+  },
 });
