@@ -20,7 +20,7 @@ const category = categories.find(
       "relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800   hover:scale-105",
       aspect === "landscape" ? "aspect-video" : "aspect-square"
     )}>
-    <a href={"/blog/" + post.slug}>
+    <a href={"/blog/" + post.id}>
       {
         post.data.image ? (
           <Picture
@@ -49,7 +49,7 @@ const category = categories.find(
   </a>
   <h2
     class="mt-2 text-lg font-semibold tracking-normal text-brand-primary dark:text-white">
-    <a href={"/blog/" + post.slug}>
+    <a href={"/blog/" + post.id}>
       <span
         class="bg-gradient-to-r from-green-200 to-green-100 dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
         {post.data.title}
@@ -61,7 +61,7 @@ const category = categories.find(
     {
       post.data.excerpt && (
         <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-clamp-3">
-          <a href={"/blog/" + post.slug}>{post.data.excerpt}</a>
+          <a href={"/blog/" + post.id}>{post.data.excerpt}</a>
         </p>
       )
     }
