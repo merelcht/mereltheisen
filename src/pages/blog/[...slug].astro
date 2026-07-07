@@ -5,7 +5,7 @@ import Label from "@components/ui/label.astro";
 import { categories } from "@data/category";
 import Layout from "@layouts/Layout.astro";
 import { getFormattedDate } from "@utils/all";
-import { CollectionEntry, getCollection } from "astro:content";
+import { CollectionEntry, getCollection, render } from "astro:content";
 
 import type { Category } from "@data/category";
 
@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
-const { Content, remarkPluginFrontmatter } = await post.render();
+const { Content, remarkPluginFrontmatter } = await render(post);
 
 const category = categories.find(
   (item) => item.slug === post.data.category
