@@ -32,8 +32,19 @@ export default defineConfig({
           if (id.includes("css-tree") && id.endsWith("data-patch.js")) {
             const patchPath = resolve(dirname(id),  "../data/patch.json");
             try {
-              const patchJson = readFileSync(patchPath, "utf-8");
-              return code.replace("require('../data/patch.json')", `(${patchJson})`);
+              const json = readFileSync(patchPath, "utf-8");
+              return code.replace("require('../data/patch.json')", `(${json})`);
+            } catch {
+              return null;
+            }
+          } 
+          if (
+            (id.includes("css-tree") || id.includes("csso")) && id.endsWith("version.js")
+          ) {
+            const pkgPath = resolve(dirname(id), "../package.json");
+            try {
+              const { version } = JSON.parse(readFileSync(pkgPath, "utf-8"));
+              return code.replace("require('../package.json')", `({ version: "${version}" })`);
             } catch {
               return null;
             }
