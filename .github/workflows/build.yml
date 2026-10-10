@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  # Check that the site still builds before changes reach `main`
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+# Cancel an in-progress build when new commits are pushed to the same PR
+concurrency:
+  group: build-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v7
+      - name: Install and build your site
+        # Same action and settings as deploy.yml, so PRs are built exactly like the deployed site
+        uses: withastro/action@v6
+        with:
+          package-manager: pnpm@v9
