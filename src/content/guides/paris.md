@@ -7,6 +7,10 @@ tips:
 - chez-janou
 - fontaine-de-mars
 - le-petit-marche
+- kubri
+- du-pain-des-idees
+- cave-vino-sapiens
+- chocho
 ---
 
 
