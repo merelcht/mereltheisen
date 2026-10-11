@@ -9,8 +9,8 @@ tips:
 - le-petit-marche
 - kubri
 - du-pain-des-idees
-# - cave-vino-sapiens
-# - chocho
+- cave-vino-sapiens
+- chocho
 ---
 
 
